@@ -1,0 +1,58 @@
+///
+/// Prototype by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Image Circles */
+
+	.image-circles {
+		margin: 4em 0 _size(element-margin) 0;
+		text-align: right;
+
+		.images {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'row');
+			margin: 1em 0 0 -1em;
+			width: calc(100% + 1em);
+
+			> * {
+				-ms-flex: 1;
+				display: block;
+				margin: 0 0 0 1em;
+				position: relative;
+				white-space: nowrap;
+				width: 100%;
+				img {
+					border-radius: 100%;
+					display: block;
+					width: calc(100% - 0.5em);
+				}
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:nth-child(2n - 1) {
+				> * {
+					@include vendor('transform', 'scaleX(-1)');
+
+					img {
+						@include vendor('transform', 'scaleX(-1)');
+					}
+				}
+			}
+		}
+
+		@include breakpoint(medium) {
+			width: 100%;
+			max-width: 30em;
+		}
+
+		@include breakpoint(small) {
+			max-width: 16em;
+		}
+	}
+
+	// @include color-image-circles;

@@ -1,0 +1,32 @@
+{
+  "name": "bebryhmes",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.12.0",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.0",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-promise-middleware": "^3.2.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+
+  }
+}

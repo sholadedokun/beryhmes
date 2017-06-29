@@ -1,0 +1,53 @@
+///
+/// Reflex by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Intro */
+
+	#intro {
+		position: fixed;
+		overflow: hidden;
+		background: #fff;
+		margin:0 auto;
+		width: 100%;
+		height:100%;
+		z-index: 1000;
+		.image {
+			@include vendor('transition', 'opacity 0.75s ease-in-out');
+			.rotateIntroCycle1 {
+			    border-radius: 100%;
+			    width: 100%;
+			    height: 100%;
+			    border: 10px solid #555;
+			    background: transparent;
+			    position: absolute;
+			}
+		}
+
+		.content {
+			@include vendor('transition', (
+				'transform 0.5s ease-in-out',
+				'opacity 0.5s ease-in-out'
+			));
+			@include vendor('transition-delay', '0.35s');
+		}
+	}
+
+	body.is-loading {
+		#intro {
+			.image {
+				opacity: 0;
+			}
+
+			.content {
+				@include vendor('transform', 'translateX(0.5em)');
+				opacity: 0;
+
+				@include breakpoint(medium) {
+					@include vendor('transform', 'translateY(0.35em)');
+				}
+			}
+		}
+	}
