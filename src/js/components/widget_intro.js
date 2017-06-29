@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import {Col, Image} from 'react-bootstrap';
 
+var classNames = require('classnames');
 import $ from 'jquery';
 
 class Intro extends Component{
-
+    constructor(props){
+        super(props);
+        this.getStarted = this.getStarted.bind(this);
+        this.state={
+            enterSite: false
+        }
+    }
     // fadeImage(){
     //     $('.slideImages').each(function(){
     //         //
@@ -28,7 +35,12 @@ class Intro extends Component{
     //
     //
     // }
-
+    getStarted(e){
+        e.preventDefault();
+        this.setState({
+            enterSite: true
+        })
+    }
     render(){
         let ProImages= this.props.images;
         // let AllImages=[];
@@ -60,23 +72,23 @@ class Intro extends Component{
             //     </ul>
             // </Col>
             // Intro -->
-                <section id="intro" className="wrapper featured style1">
+                <section id="intro" className={classNames({wrapper:true, featured:true, style1:true, animated: true, forward:true, animate_lg_delay:this.state.enterSite, slideOutUp: this.state.enterSite})}>
                     <div className="inner">
-                        <span className="image">
+                        <span className={classNames({image: true, animated: true, forward:true, zoomOutLeft: this.state.enterSite})} >
                             {/*<span className="rotateIntroCycle1"></span>*/}
 
                             <img src="images/bannerw.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <header>
-                                <h1>BeRhymes</h1>
-                                <p>I'm ipsum dolor sit magna consectetur<br />
+                            <header  className={classNames({animated: true, forward:true, fadeOutUp: this.state.enterSite})} >
+                                <h1 >BeRhymes</h1>
+                                <p>I am ipsum dolor sit magna consectetur<br />
                                 adipiscing elit. Duis dapibus rutrum facilisis.<br />
                                 classaptent taciti sociosqu and you Love olushola.</p>
                             </header>
-                            <footer>
+                            <footer  className={classNames({animated: true, forward:true, slideOutUp: this.state.enterSite})} >
                                 <ul className="actions">
-                                    <li><a href="#" className="button big">Get to Know me</a></li>
+                                    <li><a href="#" onClick={this.getStarted} className="button big">Get to Know me</a></li>
                                 </ul>
                             </footer>
                         </div>

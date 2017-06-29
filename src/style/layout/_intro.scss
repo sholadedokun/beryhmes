@@ -10,10 +10,11 @@
 		position: fixed;
 		overflow: hidden;
 		background: #fff;
-		margin:0 auto;
+		margin: 0 auto;
+		padding: 12% 0;
 		width: 100%;
 		height:100%;
-		z-index: 1000;
+		z-index: 100000;
 		.image {
 			@include vendor('transition', 'opacity 0.75s ease-in-out');
 			.rotateIntroCycle1 {

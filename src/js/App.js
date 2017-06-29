@@ -9,6 +9,8 @@ import $ from 'jquery';
 import { fetchUser, fetchImages } from "./actions/userActions";
 import { fetchWork } from "./actions/workActions";
 
+var classNames = require('classnames');
+
 class App extends Component {
     componentDidMount() {
         $('.nav').mouseover(function(){
@@ -32,10 +34,10 @@ class App extends Component {
     render() {
         const{user, work}=this.props;
         return (
-            <Grid className="App-body" fluid={true}>
-                {/* <Intro images={user} /> */}
+            <Grid className="App-body nop" fluid={true}>
+                <Intro images={user} />
                 <Header />
-                 <Body user={user} work={work} />
+                <Body user={user} work={work} />
             </Grid>
         );
     }

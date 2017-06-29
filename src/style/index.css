@@ -14,3 +14,30 @@ h1, h2, h3, h4, h5 {
 h3, h4, h5 {
   font-weight: 400;
   margin: 10px 0 20px; }
+
+animate_xs_delay {
+  animation-delay: 500ms; }
+
+animate_sm_delay {
+  animation-delay: 750ms; }
+
+animate_md_delay {
+  animation-delay: 1500ms; }
+
+animate_lg_delay {
+  animation-delay: 2000ms; }
+
+animate_xs_duration {
+  animation-delay: 500ms; }
+
+animate_sm_duration {
+  animation-delay: 750ms; }
+
+animate_md_duration {
+  animation-delay: 1500ms; }
+
+animate_lg_duration {
+  animation-delay: 2000ms; }
+
+animate_xlg_duration {
+  animation-delay: 3000ms; }
