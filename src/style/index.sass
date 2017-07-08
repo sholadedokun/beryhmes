@@ -13,29 +13,75 @@ h3, h4, h5
     font-weight: 400
     margin: 10px 0 20px
 
-animate_xs_delay
-    animation-delay: 500ms
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+    opacity: 0.25
 
-animate_sm_delay
-    animation-delay: 750ms
+  to
+    transform: rotate(360deg)
+    opacity: 0.45
 
-animate_md_delay
-    animation-delay: 1500ms
+@keyframes moveEnter
+  from
+    transform: translateX(200px)
+    opacity: 0.25
 
-animate_lg_delay
-    animation-delay: 2000ms
+  to
+    transform: ranslateX(0px)
+    opacity: 1
 
-animate_xs_duration
-    animation-delay: 500ms
+@keyframes moveLeave
+  from
+    transform: translateX(0px)
+    opacity: 1
 
-animate_sm_duration
-    animation-delay: 750ms
+  to
+    transform: ranslateX(-200px)
+    opacity: 0.01
 
-animate_md_duration
-    animation-delay: 1500ms
+.animate_xs_delay
+    animation-delay: 500ms !important
 
-animate_lg_duration
-    animation-delay: 2000ms
+.animate_sm_delay
+    animation-delay: 750ms !important
 
-animate_xlg_duration
-    animation-delay: 3000ms
+.animate_md_delay
+    animation-delay: 1500ms !important
+
+.animate_lg_delay
+    animation-delay: 2000ms !important
+
+.animate_xs_duration
+    animation-duration: 500ms !important
+
+.animate_sm_duration
+    animation-duration: 750ms !important
+
+.animate_md_duration
+    animation-duration: 1500ms !important
+
+.animate_lg_duration
+    animation-duration: 2000ms !important
+
+.animate_xlg_duration
+    animation-duration: 3000ms !important
+.rotateClockwise
+    animation: 1s linear infinite rotate
+
+.rotateAntiClockwise
+    animation: 1s linear infinite rotate reverse
+.transform_origin
+    transform-origin: 100% 100%
+
+.aboutImages-enter
+  opacity: 0.01
+
+.aboutImages-enter.aboutImages-enter-active
+  animation: moveEnter 1000ms ease-in 100ms  forward
+
+.aboutImages-leave
+  opacity: 1
+
+.aboutImages-leave.aboutImages-leave-active
+  animation: moveLeave 1000ms ease-in 300ms  forward

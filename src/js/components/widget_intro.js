@@ -72,7 +72,7 @@ class Intro extends Component{
             //     </ul>
             // </Col>
             // Intro -->
-                <section id="intro" className={classNames({wrapper:true, featured:true, style1:true, animated: true, forward:true, animate_lg_delay:this.state.enterSite, slideOutUp: this.state.enterSite})}>
+                <section id="intro" className={classNames({wrapper:true, featured:true, style1:true, animated: true, forward:true, animate_xs_delay:this.state.enterSite, slideOutUp: this.state.enterSite})}>
                     <div className="inner">
                         <span className={classNames({image: true, animated: true, forward:true, zoomOutLeft: this.state.enterSite})} >
                             {/*<span className="rotateIntroCycle1"></span>*/}
@@ -86,7 +86,7 @@ class Intro extends Component{
                                 adipiscing elit. Duis dapibus rutrum facilisis.<br />
                                 classaptent taciti sociosqu and you Love olushola.</p>
                             </header>
-                            <footer  className={classNames({animated: true, forward:true, slideOutUp: this.state.enterSite})} >
+                            <footer  className={classNames({animated: true, forward:true, bounceOutRight: this.state.enterSite})} >
                                 <ul className="actions">
                                     <li><a href="#" onClick={this.getStarted} className="button big">Get to Know me</a></li>
                                 </ul>

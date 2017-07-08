@@ -9,12 +9,15 @@
 	.image-circles {
 		margin: 4em 0 _size(element-margin) 0;
 		text-align: right;
-
+		position: relative;
 		.images {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			margin: 1em 0 0 -1em;
 			width: calc(100% + 1em);
+			height: calc(100% + 1em);
+			overflow: hidden;
+			position:relative;
 
 			> * {
 				-ms-flex: 1;
@@ -25,7 +28,6 @@
 				width: 100%;
 				img {
 					border-radius: 100%;
-					display: block;
 					width: calc(100% - 0.5em);
 				}
 			}
@@ -34,15 +36,18 @@
 				margin-top: 0;
 			}
 
-			&:nth-child(2n - 1) {
-				> * {
-					@include vendor('transform', 'scaleX(-1)');
+			// &:nth-child(2n - 1) {
+			// 	> * {
+			// 		@include vendor('transform', 'scaleX(-1)');
+			//
+			// 		img {
+			// 			@include vendor('transform', 'scaleX(-1)');
+			// 		}
+			// 	}
+			// }
 
-					img {
-						@include vendor('transform', 'scaleX(-1)');
-					}
-				}
-			}
+
+
 		}
 
 		@include breakpoint(medium) {

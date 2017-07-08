@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import {Grid} from 'react-bootstrap';
+
 import Header from './components/header';
 import Body from './components/body';
 import Intro from "./components/widget_intro";
