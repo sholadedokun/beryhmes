@@ -3,6 +3,7 @@
 		z-index-base:		10000
 	);
 
+	$p:						#024b8d;
 // Duration.
 	$duration: (
 		menu:				0.5s,
@@ -30,9 +31,10 @@
 	$palette: (
 		bg:					#ffffff,
 		bg-alt:				#f7f7f7,
-		fg:					#565656,
+		fg:					#024b8d,
 		fg-bold:			#637485,
 		fg-light:			#bbb,
+		$p:					#024b8d,
 		border:				#565656,
 		border-alt:			transparentize(#565656, 0.75),
 		border-bg:			rgba(86,86,86,0.075),

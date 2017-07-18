@@ -21,7 +21,7 @@ class Body extends Component{
         const {user, work}=this.props;
         return(
             <Row>
-                <Col className="App-bodyMarign nop" xs={12}>
+                <Col className="App-bodyMarign " xs={12}>
                     <TopSlider description={user.ProDescription} />
                     <AboutMe random={user.ProRandom} />
                     <Event  />

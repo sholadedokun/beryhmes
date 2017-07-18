@@ -75,8 +75,11 @@ class Intro extends Component{
                 <section id="intro" className={classNames({wrapper:true, featured:true, style1:true, animated: true, forward:true, animate_xs_delay:this.state.enterSite, slideOutUp: this.state.enterSite})}>
                     <div className="inner">
                         <span className={classNames({image: true, animated: true, forward:true, zoomOutLeft: this.state.enterSite})} >
-                            {/*<span className="rotateIntroCycle1"></span>*/}
-
+                            <span className="focusImage">
+                                <span className="overlay1 rotateClockwise transform_origin"></span>
+                                <span className="overlay2 rotateClockwise  transform_origin animate_md_delay animate_md_duration"></span>
+                                <span className="overlay3 rotateAntiClockwise  transform_origin  animate_lg_duration"></span>
+                            </span>
                             <img src="images/bannerw.jpg" alt="" />
                         </span>
                         <div className="content">

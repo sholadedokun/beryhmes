@@ -46,7 +46,7 @@ class Projects extends Component{
         }
         return (
 
-            <section className="wrapper style3 special">
+            <section id="music" className="wrapper style3 special">
                 <div className="inner">
                     <header>
                         <h2>Lastest Music</h2>

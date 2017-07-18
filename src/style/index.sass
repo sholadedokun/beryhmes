@@ -20,16 +20,18 @@ h3, h4, h5
 
   to
     transform: rotate(360deg)
-    opacity: 0.45
+    opacity: 0.01
 
 @keyframes moveEnter
   from
     transform: translateX(200px)
-    opacity: 0.25
+    opacity: 0.01
+    z-index: 4
 
   to
-    transform: ranslateX(0px)
+    transform: translateX(0px)
     opacity: 1
+    z-index: 4
 
 @keyframes moveLeave
   from
@@ -37,7 +39,7 @@ h3, h4, h5
     opacity: 1
 
   to
-    transform: ranslateX(-200px)
+    transform: translateX(-200px)
     opacity: 0.01
 
 .animate_xs_delay
@@ -76,12 +78,14 @@ h3, h4, h5
 
 .aboutImages-enter
   opacity: 0.01
+  z-index: 4
 
 .aboutImages-enter.aboutImages-enter-active
-  animation: moveEnter 1000ms ease-in 100ms  forward
+  animation: moveEnter 900ms ease-in 0ms forwards
 
 .aboutImages-leave
   opacity: 1
+   z-index: 1
 
 .aboutImages-leave.aboutImages-leave-active
-  animation: moveLeave 1000ms ease-in 300ms  forward
+  animation: moveLeave 1000ms ease-in 0ms forwards

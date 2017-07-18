@@ -5,12 +5,7 @@
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300italic,500,500italic');
 
-/*
-	Reflex by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
+$p: #024b8d;
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
