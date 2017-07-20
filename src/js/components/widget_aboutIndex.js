@@ -14,6 +14,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
              totalSlide:4
          }
          this.animateRandom=this.animateRandom.bind(this);
+         this.changeView=this.changeView.bind(this)
      }
      animateRandom(){
          let randomImageholder =Math.floor(Math.random()* this.state.images.length)
@@ -35,6 +36,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
      componentWillUnMount(){
          clearInterval(this.interval);
      }
+
      render(){
          return(
              <div className='inner'>
@@ -46,7 +48,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
                          I have drummed, written, vocalised, produced and masetered many songs -pro, uhhh!!!
                      </p>
                      <ul className="actions">
-                         <li><a href="#" className="button" onClick={props.onClick('fullstrory')} >My Story</a></li>
+                         <li><a href="#" className="button" onClick={this.changeView}>My Story</a></li>
                      </ul>
                 </div>
                 <div className="image-circles">

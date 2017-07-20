@@ -13,13 +13,20 @@ class TopBanner extends Component{
             <section id="banner">
 				<div className="inner">
 					<div className="content">
-						<h2>Berhymes is the name</h2>
-						<p>Music is the game</p>
+						<span className='TopBannerHeader'>BE</span><span className='TopBannerSubHeader'>RHYMES</span>
+						<p>
+                            <div>
+                            <div>Artist, Producer,</div>
+                                <ul>
+                                    <li>Guitarist</li>
+                                    <li>Teacher</li>
+                                    <li>Dancer</li>
+                                    <li>Writer</li>
+                                </ul>
+                            </div>
+                        </p>
 					</div>
-					 <ul className="actions vertical"> 
-						{/* <li><a href="#" className="button special major">Get Started</a></li> */}
-						{/* <li><a href="#" className="button major">More Info</a></li> */}
-					 </ul>
+
 				</div>
 			</section>
         )

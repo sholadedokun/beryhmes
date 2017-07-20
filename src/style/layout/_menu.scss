@@ -17,7 +17,7 @@
 			'opacity #{_duration(menu) * 0.5} ease',
 			'visibility #{_duration(menu) * 0.5}'
 		));
-		background-color: _palette(invert, fg);
+		background-image: url('../../public/images/menuBg.jpg');
 		height: 100%;
 		opacity: 0;
 		overflow: hidden;
@@ -28,6 +28,7 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 		visibility: hidden;
+		color: #fff;
 
 		&:before {
 			@include vendor('transition', (
@@ -43,9 +44,10 @@
 			right: 2em;
 			width: 3.75em;
 			height: 3.75em;
-			background-color: _palette(invert, bg);
+
 			border-radius: 100%;
 			z-index: -1;
+
 		}
 
 		> .close {
@@ -120,6 +122,7 @@
 
 		h2 {
 			font-size: 1.75em;
+			color: #fff !important;
 		}
 
 		ul {
@@ -137,6 +140,7 @@
 						line-height: 3.5em;
 						display: block;
 						border: 0;
+						color: #fff;
 					}
 
 					&:first-child {
