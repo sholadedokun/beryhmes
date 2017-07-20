@@ -20,7 +20,7 @@ class Head extends Component{
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#social">Social Media</a></li>
                         <li><a href="#music">Music And Me</a></li>
-                        <li><a href="#contact">Elements</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>

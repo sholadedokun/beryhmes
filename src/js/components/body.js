@@ -7,6 +7,8 @@ import AboutMe from "./widget_aboutMe";
 import ProWork from "./widget_projects";
 import SocialMedia from "./widget_socialMedia"
 import Event from "./widget_events"
+import Blog from "./widget_blog"
+import ContactMe from "./widget_contactMe"
 
 import '../../style/App.css';
 class Body extends Component{
@@ -27,6 +29,8 @@ class Body extends Component{
                     <Event  />
                     <ProWork projects={work.projects} />
                     <SocialMedia  />
+                    <Blog  />
+                    <ContactMe  />
                 </Col>
             </Row>
         )
