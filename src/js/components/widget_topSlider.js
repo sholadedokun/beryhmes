@@ -16,13 +16,15 @@ class TopBanner extends Component{
 						<span className='TopBannerHeader'>B</span><span className='TopBannerSubHeader'>erhymes</span>
 						<p>
                             <div>
-                            <div>Artist, Sound Engineer,</div>
-                                <ul>
-                                    <li>Guitarist</li>
-                                    <li>Producer</li>
-                                    <li>Musicologist</li>
-                                    <li>Songwriter</li>
-                                </ul>
+                                <div>Artist, Sound Engineer,</div>
+                                <span className='workSlide'>
+                                    <ul>
+                                        <li>Guitarist</li>
+                                        <li>Producer</li>
+                                        <li>Musicologist</li>
+                                        <li>Songwriter</li>
+                                    </ul>
+                                </span>
                             </div>
                         </p>
 					</div>

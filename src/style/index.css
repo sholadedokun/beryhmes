@@ -171,3 +171,11 @@ h3, h4, h5 {
 #music p {
   font-size: 0.9em;
   margin-top: -2em; }
+
+@media screen and (max-width: 450px) {
+  #banner ul {
+    display: block; }
+  .TopBannerHeader {
+    font-size: 4em !important; }
+  .TopBannerSubHeader {
+    font-size: 3em !important; } }

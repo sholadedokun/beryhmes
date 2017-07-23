@@ -2604,12 +2604,14 @@ table.alt tbody tr td {
       margin: -20px 5px;
       letter-spacing: 4px;
       font-weight: bold;
-      color: #024b8d;
-      height: 1.2em;
-      overflow: hidden; }
+      color: #024b8d; }
       #banner .inner p div {
         float: left;
         width: auto; }
+      #banner .inner p .workSlide {
+        display: inline-block;
+        height: 1.2em;
+        overflow: hidden; }
       #banner .inner p ul {
         padding: 0;
         margin: 0;
