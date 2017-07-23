@@ -4,15 +4,14 @@ const blog = () => {
         <section id="social" className="wrapper style1 special">
             <div className="inner">
                 <header>
-                    <h2>Random Mussings</h2>
-                    <p>If you care about normally goes on in my head,<br />
-                    then welcome to my blog.</p>
+                    <h2>Blog</h2>
+                    <p>What I blog About.</p>
                 </header>
                 <section className="spotlight">
-                    <span className="image"><img src="images/pic02.jpg" alt="" /></span>
+                    <span className="image"><img src="images/blog1.jpg" alt="" /></span>
                     <div className="content">
                         <header>
-                            <h3>Aliquam veroeros</h3>
+                            <h3>The Movement of Africa Sound</h3>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos magna fames ac turpis egestas amet non lorem amet.</p>
                         <footer>
@@ -23,10 +22,10 @@ const blog = () => {
                     </div>
                 </section>
                 <section className="spotlight">
-                    <span className="image"><img src="images/pic03.jpg" alt="" /></span>
+                    <span className="image"><img src="images/blog2.jpg" alt="" /></span>
                     <div className="content">
                         <header>
-                            <h3>Nostra adpiscing</h3>
+                            <h3>Afro-pop the Next Big thing</h3>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos magna fames ac turpis egestas amet non lorem amet.</p>
                         <footer>
@@ -37,10 +36,10 @@ const blog = () => {
                     </div>
                 </section>
                 <section className="spotlight">
-                    <span className="image"><img src="images/pic04.jpg" alt="" /></span>
+                    <span className="image"><img src="images/blog3.jpg" alt="" /></span>
                     <div className="content">
                         <header>
-                            <h3>Tempus litoria</h3>
+                            <h3>Building a structure in Nigeria Music Industry</h3>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos magna fames ac turpis egestas amet non lorem amet.</p>
                         <footer>

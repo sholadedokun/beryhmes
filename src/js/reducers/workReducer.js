@@ -1,9 +1,9 @@
 export default function reducer(state={
     projects: [
         {
-            title:'Resolve',
-            type:'Mobile Development',
-            description:'A mobile App for reporting or whisle-blowing corrupt practises',
+            title:'Lowo Re',
+            type:'Afro-pop',
+            description:'A Love song',
             date:'Feburary 2017',
             role:'Founder, Backend',
             technology:"Node, Express, Mongo, Mongoose"

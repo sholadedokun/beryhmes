@@ -164,3 +164,10 @@ h3, h4, h5 {
     transform: translate3d(0, -50%, 0); }
   83.3%, 95.96% {
     transform: translate3d(0, -25%, 0); } }
+
+#music h2, #music h3, #music h4, #music h5 {
+  color: #fff; }
+
+#music p {
+  font-size: 0.9em;
+  margin-top: -2em; }

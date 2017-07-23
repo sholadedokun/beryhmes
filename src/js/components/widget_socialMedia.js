@@ -12,11 +12,11 @@ class SocialMedia extends Component{
                         <p>I mostly post interesting stuff</p>
                     </header>
                     <ul className="icons major style2">
-                        <li><span className="icon fa-facebook"><span className="label">Lorem</span></span></li><li>
-                        <span className="icon fa-twitter"><span className="label">Ipsum</span></span></li><li>
-                        <span className="icon fa-instagram"><span className="label">Dolor</span></span></li><li>
-                        <span className="icon fa-pinterest"><span className="label">Feugiat</span></span></li><li>
-                        <span className="icon fa-snapchat"><span className="label">Tempus</span></span></li>
+                        <li><a href="https://www.facebook.com/berhymes/" target="_blank"><span className="icon fa-facebook"><span className="label"> </span></span></a></li>
+                        <li><a href="https://www.twitter.com/iam_berhymes/" target="_blank"><span className="icon fa-twitter"><span className="label"> </span></span></a></li>
+                        <li><a href="https://www.instagram.com/iam_berhymes/" target="_blank"><span className="icon fa-instagram"><span className="label"> </span></span></a></li>
+                        <li><a href="https://www.soundcloud.com/berhymes/" target="_blank"><span className="icon fa-soundcloud"><span className="label"> </span></span></a></li>
+                        <li><a href="https://www.snapchat.com/add/iam_berhymes/" target="_blank"><span className="icon fa-snapchat"><span className="label"> </span></span></a></li>
                     </ul>
                 </div>
             </section>

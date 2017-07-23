@@ -72,6 +72,16 @@ export function updateTweet(id, text) {
   }
 }
 
+export function contactPost(message) {
+
+  return {
+    type: 'POST_CONTACT',
+    payload: {
+      message
+    },
+  }
+}
+
 export function deleteTweet(id) {
   return { type: 'DELETE_TWEET', payload: id}
 }

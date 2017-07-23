@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import {Grid} from 'react-bootstrap';
-
+import firebase from 'firebase';
 import Header from './components/header';
 import Body from './components/body';
 import Intro from "./components/widget_intro";
@@ -26,6 +26,14 @@ class App extends Component {
     componentWillMount() {
       this.props.dispatch(fetchUser())
       this.props.dispatch(fetchWork())
+      firebase.initializeApp({
+          apiKey: "AIzaSyDwYfLiGzthKHVMY82a0MbLabR_m1ngzTM",
+          authDomain: "berhymes-b0da1.firebaseapp.com",
+          databaseURL: "https://berhymes-b0da1.firebaseio.com",
+          projectId: "berhymes-b0da1",
+          storageBucket: "berhymes-b0da1.appspot.com",
+          messagingSenderId: "591046917351"
+      })
     //   this.props.dispatch(fetchImages())
     }
 

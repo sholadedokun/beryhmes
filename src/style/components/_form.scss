@@ -295,5 +295,11 @@
 			}
 		}
 	}
-
+	.inputError{
+		border-color: #900 !important;
+	}
+	.textError{
+		color: #900;
+		font-size: 0.5em
+	}
 	@include color-form;

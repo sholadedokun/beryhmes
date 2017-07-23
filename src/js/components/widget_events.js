@@ -14,10 +14,10 @@ class Event extends Component{
                     <section className="timeline">
                         <section>
                             <header>
-                                <p>09.04.16</p>
-                                <h4>Magna etiam sed lorem ipsum dolor amet</h4>
+                                <p>09.04.17</p>
+                                <h4>Madison Square Garden, New York</h4>
                             </header>
-                            <span className="image"><img src="images/bannerw.jpg" alt="" /></span>
+                            <span className="image"><img src="images/madison.jpeg" alt="" /></span>
                             <div className="content">
                                 <p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
                                 <ul className="actions">
@@ -27,10 +27,11 @@ class Event extends Component{
                         </section>
                         <section>
                             <header>
-                                <p>08.28.16</p>
-                                <h4>Sed feugiat et mauris adipiscing dolor</h4>
+                                <p>12.28.17</p>
+                                <h4>02 Arena,
+                                London</h4>
                             </header>
-                            <span className="image"><img src="images/banner7.jpg" alt=""/></span>
+                            <span className="image"><img src="images/02arena.jpg" alt=""/></span>
                             <div className="content">
                                 <p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
                                 <ul className="actions">
@@ -40,10 +41,10 @@ class Event extends Component{
                         </section>
                         <section>
                             <header>
-                                <p>08.22.16</p>
-                                <h4>Tellus magna dolore sed elementum</h4>
+                                <p>02.22.18</p>
+                                <h4>Wembley Stadium, London</h4>
                             </header>
-                            <span className="image"><img src="images/banner8.jpg" alt=""/></span>
+                            <span className="image"><img src="images/wembley.jpg" alt=""/></span>
                             <div className="content">
                                 <p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
                                 <ul className="actions">

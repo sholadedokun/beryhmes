@@ -84,10 +84,10 @@ class Intro extends Component{
                         </span>
                         <div className="content">
                             <header  className={classNames({animated: true, forward:true, fadeOutUp: this.state.enterSite})} >
-                                <h1 >BeRhymes</h1>
-                                <p>I am ipsum dolor sit magna consectetur<br />
-                                adipiscing elit. Duis dapibus rutrum facilisis.<br />
-                                classaptent taciti sociosqu and you Love olushola.</p>
+                                <h1>BeRhymes</h1>
+                                <h3>/ be-rimes / </h3>
+                                <p>A talented Nigerian Artist.<br />
+                                </p>
                             </header>
                             <footer  className={classNames({animated: true, forward:true, bounceOutRight: this.state.enterSite})} >
                                 <ul className="actions">

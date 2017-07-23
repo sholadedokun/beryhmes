@@ -13,15 +13,15 @@ class TopBanner extends Component{
             <section id="banner">
 				<div className="inner">
 					<div className="content">
-						<span className='TopBannerHeader'>BE</span><span className='TopBannerSubHeader'>RHYMES</span>
+						<span className='TopBannerHeader'>B</span><span className='TopBannerSubHeader'>erhymes</span>
 						<p>
                             <div>
-                            <div>Artist, Producer,</div>
+                            <div>Artist, Sound Engineer,</div>
                                 <ul>
                                     <li>Guitarist</li>
-                                    <li>Teacher</li>
-                                    <li>Dancer</li>
-                                    <li>Writer</li>
+                                    <li>Producer</li>
+                                    <li>Musicologist</li>
+                                    <li>Songwriter</li>
                                 </ul>
                             </div>
                         </p>

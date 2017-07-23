@@ -46,7 +46,7 @@ class AboutMe extends Component{
             <section id="about" className="wrapper style1 split">
 				<div className="inner">
 
-                    <div class="content">
+                    <div className="content">
                         <h2>About Me</h2>
                         <p>
                             Named Olalekan braimoh, but you know I have to put a little swag to it; "Berhymes" sounds

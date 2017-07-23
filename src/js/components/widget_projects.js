@@ -40,7 +40,9 @@ class Projects extends Component{
         if(this.state.projects.length >0){
             displayProject= <Col className="nop" xs={12}>
                 <h5>{this.state.projects[this.state.currentProject].type}</h5>
-                <div className="project_title">{this.state.projects[this.state.currentProject].title}</div>
+                <div className="project_title">
+                    <h3>{this.state.projects[this.state.currentProject].title}</h3>
+                    </div>
                 <p>{this.state.projects[this.state.currentProject].description}</p>
             </Col>
         }
@@ -58,8 +60,11 @@ class Projects extends Component{
                         </ul>
                     </footer>
                 </div>
-                <span className="arrow_left arrow fa fa-angle-left" name="previous"></span>
-                <span className="arrow_right arrow fa fa-angle-right" name="next"></span>
+                {
+                    /* <span className="arrow_left arrow fa fa-angle-left" name="previous"></span>
+                    <span className="arrow_right arrow fa fa-angle-right" name="next"></span>
+                    */
+                }
             </section>
 
         )
