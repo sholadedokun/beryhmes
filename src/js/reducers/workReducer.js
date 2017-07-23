@@ -80,6 +80,14 @@ export default function reducer(state={
               WORK: action.payload,
             }
         }
+        case "POST_CONTACT": {
+            return {
+              ...state,
+              fetching: false,
+              fetched: true,
+              CONTACT: action.payload,
+            }
+        }
         default:{}
     }
 

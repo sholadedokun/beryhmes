@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 const blog = () => {
     return(
-        <section id="social" className="wrapper style1 special">
+        <section id="blog" className="wrapper style1 special">
             <div className="inner">
                 <header>
                     <h2>Blog</h2>

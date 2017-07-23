@@ -5,7 +5,7 @@ class SocialMedia extends Component{
     render(){
 
         return(
-            <section className="wrapper style2 special">
+            <section id='social' className="wrapper style2 special">
                 <div className="inner">
                     <header>
                         <h2>Collect on Social Media</h2>

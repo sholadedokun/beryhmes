@@ -18,8 +18,10 @@ class Head extends Component{
                     <ul className="links">
                         <li><a href="#banner">Home</a></li>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#social">Social Media</a></li>
+                        <li><a href="#event">See Me Perform</a></li>
                         <li><a href="#music">Music And Me</a></li>
+                        <li><a href="#social">Social Media</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact Me</a></li>
                     </ul>
                 </nav>

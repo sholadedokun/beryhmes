@@ -1,21 +1,29 @@
 import React, {Component} from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux'
 import { contactPost} from '../actions/workActions';
 
 class contactMe extends Component {
+    constructor(props){
+        super();
+        // this.onSubmit = this.onSubmit.bind(this)
+        this.renderInput = this.renderInput.bind(this)
+    }
     renderInput(field){
         const {meta:{touched, error}} = field;
         const classN= `${ touched && error ? 'inputError':'' }`;
         return(
             <span>
                 <input className={classN}  type={field.type} name={field.name} placeholder={field.placeholder} {...field.input} />
-                <br /><span className='textError'>{touched ? error : ''}</span>
+                <span className='textError'>{touched ? error : ''}</span>
             </span>
         )
-
+    }
+    onSubmit(value){
+        this.props.contactPost(value);
     }
     render(){
-
+        const { handleSubmit } =this.props
         return(
             <section id="footer" className="wrapper split style2">
                 <div  id="contact" className="inner">
@@ -33,7 +41,7 @@ class contactMe extends Component {
                         </ul>
                     </section>
                     <section>
-                        <form onSubmit={this.props.handleSubmit((props)=> console.log(props))}>
+                        <form onSubmit={ handleSubmit(this.onSubmit.bind(this)) }>
                             <div className="field half first">
                                 <Field component={this.renderInput.bind(this)} type="text" name="name" id="name" placeholder="Name" />
                             </div>
@@ -72,4 +80,6 @@ function validate(values){
 export default reduxForm({
     validate,
     form: 'contactMe'
-})(contactMe);
+})(
+    connect(null, { contactPost })(contactMe)
+);

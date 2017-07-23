@@ -74,12 +74,16 @@ export function updateTweet(id, text) {
 
 export function contactPost(message) {
 
-  return {
-    type: 'POST_CONTACT',
-    payload: {
-      message
-    },
-  }
+    return function(dispatch) {
+
+      axios.post("http://rest.learncode.academy/api/reacttest/work", message)
+        .then((response) => {
+          dispatch({type: "POST_CONTACT", payload: response.data})
+        })
+        .catch((err) => {
+          dispatch({type: "POST_CONTACT_REJECTED", payload: err})
+        })
+    }
 }
 
 export function deleteTweet(id) {

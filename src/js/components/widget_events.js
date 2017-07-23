@@ -5,7 +5,7 @@ class Event extends Component{
     render(){
 
         return(
-            <section id="four" className="wrapper style2 alt">
+            <section id="event" className="wrapper style2 alt">
                 <div className="inner">
                     <header className="timelineMajor">
                         <p>Catch Me if you can</p>
