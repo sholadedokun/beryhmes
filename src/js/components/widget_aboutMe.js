@@ -49,10 +49,10 @@ class AboutMe extends Component{
                     <div className="content">
                         <h2>About Me</h2>
                         <p>
-                            Named Olalekan braimoh, but you know I have to put a little swag to it; "Berhymes" sounds
-                            sweet so it stuck. I studied Music from the Obafemi Awolowo University
-                            Ile-Ife. Music has been my passion and I do not really know when our love affair started.
-                            I have drummed, written, vocalised, produced and masetered many songs -pro, uhhh!!!
+                            ${`My name is Olalekan braimoh, but you know I have to put a little swag to it;
+                            "Berhymes" sounds sweet so it stuck. I studied Music from the Obafemi Awolowo University
+                            Ile-Ife. Music has been my passion and our love affair started when I very young.
+                            I'm a drummer, songwriter, vocalist, producer and sound engineer, -pro uhhh!!!`}
                         </p>
                         <ul className="actions">
                             <li><a href="#" className="button" onClick={this.changeView}>My Story</a></li>

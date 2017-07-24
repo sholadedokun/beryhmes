@@ -11,7 +11,7 @@ const blog = () => {
                     <span className="image"><img src="images/blog1.jpg" alt="" /></span>
                     <div className="content">
                         <header>
-                            <h3>The Movement of Africa Sound</h3>
+                            <h3>The Movement of African Sound</h3>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos magna fames ac turpis egestas amet non lorem amet.</p>
                         <footer>
