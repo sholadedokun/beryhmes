@@ -49,7 +49,7 @@ class AboutMe extends Component{
                     <div className="content">
                         <h2>About Me</h2>
                         <p>
-                            ${`My name is Olalekan braimoh, but you know I have to put a little swag to it;
+                            {`My name is Olalekan braimoh, but you know I have to put a little swag to it;
                             "Berhymes" sounds sweet so it stuck. I studied Music from the Obafemi Awolowo University
                             Ile-Ife. Music has been my passion and our love affair started when I very young.
                             I'm a drummer, songwriter, vocalist, producer and sound engineer, -pro uhhh!!!`}

@@ -10,7 +10,7 @@ class TopBanner extends Component{
             subtext=<h4>{ProDescription.subtext}</h4>;
         }
         return(
-            <section id="banner">
+            <section id="banner" className="wrapper">
 				<div className="inner">
 					<div className="content">
 						<span className='TopBannerHeader'>B</span><span className='TopBannerSubHeader'>erhymes</span>
